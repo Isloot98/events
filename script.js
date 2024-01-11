@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
   
-    let button = document.querySelector('button');
+    let button = document.getElementById('RGB');
   
     button.addEventListener('click', function() {
       toggleStyles(button);
     });
-  
+    
+    
+
     function toggleStyles(element) {
       let stylesApplied = element.classList.contains('styles-applied');
   
       if (!stylesApplied) {
         applyStyles(element);
-        element.textContent = 'Turn background into RGB';
+        element.textContent = 'Turn me back';
 
       } else {
         resetStyles(element);
@@ -64,3 +66,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   
+
+  let hover = document.getElementById('hover-button');
+  hover.addEventListener('click', function() {
+    toggleStyles(hover);
+  });
+
+  hover.addEventListener('mouseover', function() {
+    hover.style.transform = 'scale(1.05)';
+  });
+
+  hover.addEventListener('mouseout', function() {
+    hover.style.transform = 'scale(1)';
+  });
