@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   hover.addEventListener('mouseover', function() {
-    hover.style.transform = 'scale(1.05)';
+    hover.style.transform = 'scale(2.05)';
   });
 
   hover.addEventListener('mouseout', function() {
